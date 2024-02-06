@@ -32,7 +32,8 @@ body {
 
 .wrapper {
   border-radius: 16px;
-  margin: 75px 400px 0 400px;
+  margin: 75px auto;
+  width: 700px;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -47,11 +48,171 @@ img {
   object-fit: cover;
 }
 
-h1 {
+.recipe-header {
   font-family: Young-Serif;
+  font-size: 35px;
+  font-weight: normal;
+  color: hsl(24, 5%, 18%);
 }
 
 .recipe-article {
   font-family: Outfit;
   font-size: 16px;
+  margin-bottom: 30px;
+  color: hsl(30, 10%, 34%);
+}
+
+/* Preparation time */
+
+.preparation-time-container {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 15px;
+  font-family: Outfit;
+  margin-bottom: 25px;
+}
+
+.preparation-time-header {
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-time-container ul {
+  margin-left: 10px;
+}
+
+.preparation-time-container ul li {
+  padding-left: 20px;
+  padding-bottom: 12px;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-time-container ul li:last-child {
+  padding-bottom: 25px;
+}
+
+/* Ingredients */
+
+.ingredients-header {
+  font-family: Young-Serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-list {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.ingredients-list li {
+  font-family: Outfit;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  padding-left: 20px;
+  padding-bottom: 12px;
+}
+
+.ingredients-list li:last-child {
+  padding-bottom: 0px;
+}
+
+/* Horizontal rule ^_^ */
+
+hr {
+  margin: 0;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: hsl(30, 18%, 87%);
+}
+
+/* Instructions */
+
+.instructions-header {
+  font-family: Young-Serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-list li::marker {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-list {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.instructions-list li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+.instructions-list li:last-child {
+  padding-bottom: 0;
+}
+
+/* Nutrition */
+
+.nutrition-header {
+  font-family: Young-Serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-article {
+  font-family: Outfit;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition-table-wrapper {
+  padding-bottom: 30px;
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition-table td,
+th {
+  width: 50%;
+  font-family: Outfit;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 0 10px 30px;
+  border-bottom: 1.5px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-table th {
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-table td {
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition-table tr:last-child td,
+tr:last-child th {
+  border-bottom: none;
+}
+
+/* footer */
+
+footer {
+  font-family: Outfit;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: hsl(32, 22%, 67%);
 }
